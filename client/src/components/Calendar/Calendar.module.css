@@ -1,0 +1,50 @@
+.App {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px 1px #333;
+    border-radius:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .calendarContainer{
+    max-width:400px;
+    max-height:400px;
+  }
+  .head{
+    padding-left:140px;
+  }
+  .mon{
+    margin-left: 35px;
+  }
+  .calendar {
+    padding-bottom:10px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 05px 30px;
+      }
+  
+  .day {
+    padding-top: 05px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 7px;
+    width: 40px;
+    height:30px;
+
+    background-color:white;
+  }
+  
+  .day.visited {
+    background-color: #333;
+    color: white;
+  }
+  
+  .day.today {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  

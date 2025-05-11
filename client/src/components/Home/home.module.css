@@ -1,0 +1,207 @@
+/* Home Page */
+.home-page {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(./bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  width: 90%;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 3rem;
+  color: #e0e0e0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+
+/* Explore Button */
+.explore-btn {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d0d30;
+  background: yellow;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.explore-btn:hover {
+  background: yellow;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.intro {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #e0e0e0;
+  font-size: 1.8rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.6rem;
+}
+
+/* Remove underline from any feature links */
+.features a {
+  text-decoration: none;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 0.8rem;
+  text-align: center;
+  width: 280px;
+  height:175px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
+  transition: transform 0.2s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.feature:hover {
+  transform: scale(1.08);
+  border: 1px solid #e0e0e0;
+}
+
+.feature h3 {
+  color: yellow;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  padding-bottom: 7px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.dev-by {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 7px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .home-page {
+    height: 120vh;
+  }
+  .hero-content {
+    padding: 2rem;
+    margin-top: 3%;
+  }
+  .hero h1 {
+    font-size: 1.65rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .explore-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .intro {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 1.65rem;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .feature {
+    width: 70%;
+  }
+  .feature h3 {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+  .feature p {
+    font-size: 0.9rem;
+  }
+  .footer-links a {
+    font-size: 0.8rem;
+  }
+}
+.intro{
+  padding-bottom:30px;
+}
+.footer{
+  margin-top: 10px;
+}
